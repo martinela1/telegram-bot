@@ -927,7 +927,7 @@ def main():
 
     app = (
         ApplicationBuilder()
-        .token("8519523498:AAFvZce0LcA2myifu1MTPOM18-jKP6cJSoM")
+        .token(os.getenv("TELEGRAM_BOT_TOKEN"))
         .build()
     )
     app.add_handler(CommandHandler("start", start))
