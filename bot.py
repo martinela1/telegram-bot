@@ -719,6 +719,9 @@ Rubin, granat, jasp roșu, coral roșu""",
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data.clear()
+    context.chat_data.clear()
+    
     keyboard = [
         [InlineKeyboardButton("🔢 Cifra Destinului", callback_data="destin")],
         [
