@@ -815,7 +815,7 @@ async def button_click(update: Update, context: ContextTypes.DEFAULT_TYPE):
             ]
         ]
 
-        with open("attached_assets/tarot_express.png_1777884187659.png", "rb") as photo:
+        with open("tarot_express.png.png", "rb") as photo:
             await query.message.reply_photo(
                 photo=photo,
                 caption="🔮 Tarot Express",
