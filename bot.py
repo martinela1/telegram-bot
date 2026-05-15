@@ -734,9 +734,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
 
     await update.message.reply_text(
-        "Bine ai venit ✨\n\nCe vrei să calculezi astăzi?"
-        reply_markup=InlineKeyboardMarkup(keyboard),
-    )
+    "Bine ai venit ✨\n\nCe vrei să calculezi astăzi?",
+    reply_markup=InlineKeyboardMarkup(keyboard),
+)
 
 
 async def send_full_text(query, descriere):
