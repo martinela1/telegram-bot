@@ -731,7 +731,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
 
     await update.message.reply_text(
-        "Bine ai venit ✨\n\nAlege ce vrei să calculezi:",
+        "Bine ai venit TEST ✨\n\nAlege ce vrei să calculezi:",
         reply_markup=InlineKeyboardMarkup(keyboard),
     )
 
