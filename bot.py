@@ -727,6 +727,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
         ],
         [InlineKeyboardButton("⭐ Cifra Realizării", callback_data="realizare")],
+        [InlineKeyboardButton("🔮 Tarot Express", callback_data="tarot_express")]
     ]
 
     await update.message.reply_text(
@@ -745,19 +746,14 @@ Tarot Express este pentru momentele în care vrei un răspuns rapid, clar și pe
 """
 
     keyboard = [
-        [
-            InlineKeyboardButton(
-                "🌙 Intră în comunitatea privată",
-                url="https://t.me/tanya_astrovedic_bot",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                "🔮 Tarot Express",
-                callback_data="tarot_express",
-            )
-        ],
+    [
+        InlineKeyboardButton(
+            "🌙 Intră în comunitatea privată",
+            url="https://t.me/tribute/app?startapp=sTxd",
+        )
     ]
+]
+            
     print("🔥 FINAL BUTTON BLOCK RUNNING")
 
     await query.message.reply_text(
